@@ -13,7 +13,7 @@ channel = 1
 voltage = 0
 current = 0
 
-dp = dp832.dp832()
+dp = dp832.dp832(fname="/dev/usbtmc0")
 
 for o, a in opts:
   print o

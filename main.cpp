@@ -42,7 +42,7 @@
 */
 
 const std::string kValidArgs = "c:v:i:s:b:d:xmw:r:t:";
-const std::string kDefaultUSBDevicePath = "/dev/usbtmc1";
+const std::string kDefaultUSBDevicePath = "/dev/usbtmc0";
 
 using namespace std::chrono;
 
