@@ -41,7 +41,21 @@ location ~ \.cgi$ {
         }
 ```
 
-
-
 https://wiki.debian.org/nginx/FastCGI
 https://zh.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%BD%91%E5%85%B3%E6%8E%A5%E5%8F%A3
+
+
+## Control in Python
+Just to copy `dp832.py` to your working folder. Then:
+```python
+import dp832
+# Create python object with power supply's linux path
+# you should check it by yourself
+dp = dp832.dp832(fname="/dev/usbtmc0")
+dp.On(1) # turn on channel 1
+dp.On(2) # turn on channel 2
+dp.On(3) # turn on channel 3
+dp.Off(1) # turn off channel 1
+dp.Off(2) # turn off channel 2
+dp.Off(3) # turn off channel 3
+```
