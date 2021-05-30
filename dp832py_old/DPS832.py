@@ -1,4 +1,4 @@
-from visa import *
+from pyvisa import *
 import time
 
 _delay = 0.01  # in seconds
